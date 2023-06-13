@@ -1,0 +1,19 @@
+#isfj {
+  background-color: #c79e5d;
+  background-image: repeating-radial-gradient(
+    circle,
+    #c79e5d,
+    #dab885 50%,
+    #dab885 100%
+  );
+}
+
+#isfp {
+  background-color: #e6d0ac;
+  background-image: repeating-radial-gradient(
+    circle,
+    #e6d0ac,
+    #bbb2a4 50%,
+    #bbb2a4 100%
+  );
+}

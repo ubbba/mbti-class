@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Indie Flower";
+  background-image: url("../bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.enter {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  font-family: "Kanit", sans-serif;
+  --b: 0.1em; /* the thickness of the line */
+  --c: #f15934; /* the color */
+
+  color: #0000;
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #000 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
+}
+
+.enter:hover {
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  --_p: 100%;
+  --_s: 0.3s;
+}
